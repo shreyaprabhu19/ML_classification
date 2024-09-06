@@ -7,5 +7,16 @@ The Fermi Gamma-ray Burst Monitor (GBM) is an all-sky gamma-ray monitor that det
 ## Data
 The data files are obtained from the Fermi GBM Trigger Catalog. The data files used in this project include a trigger data file (.fit extension) used to find the brightest detector and a Time-Tagged Event (TTE) data file used to plot the light curves.
 
-## Algorithm for classification
+## Light Curves of Different X-ray Transients
+Light curves are graphs that show the brightness of an object in terms of number of photons as a function of time. Light curves for different triggers are obtained by plotting histograms of the time data present in the TTE file. The features visible in these light curves vary depending on the trigger type. A few light curves for random triggers were plotted to visualize these features.
+
+![Light_curves1](https://github.com/user-attachments/assets/a03d71ba-37be-4468-888b-e067d02cd919)
+
+Light curves for Gamma Ray Burst (GRB) and terrestrial gamma ray flash (TGF) for different bin sizes are shown in the following figure.
+
+![Screenshot (5)](https://github.com/user-attachments/assets/f62cb87f-e2bb-4ba0-b451-6fc53f0bf451)
+
+## Algorithm for Classification
 A simple neural network model consisting of a single convolution layer gives the desirable accuracy on the training data set and can make predictions for unseen data with considerably high accuracy.
+
+The code <code>Classification_using_CNN.ipynb</code> consists of the supervised classification algorithm using the Convolotional Neural Network. The early stopping techniques is also implemented to prevent the model from overfitting. The model for classifying the two classes of transients (GRBs and TGFs) work with the accuracy of 68% for the considered testing data.
