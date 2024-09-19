@@ -1,4 +1,5 @@
-# Data Science Minor Project 2023
+# Classification of Astronomical X-ray Transients Using Machine Learning Algorithm*
+## Data Science Minor Project 2023
 
 This repository contains the codes for **Classification of astronomical X-ray transients using Machine Learning algorithm**. This project was supervised Dr. Shabnam Iyyani, Indian Institute of Science Education and Research (IISER) Thiruvananthapuram.
 
